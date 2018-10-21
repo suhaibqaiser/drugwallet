@@ -14,7 +14,7 @@
     "e2e": "ng e2e",
     "modernizr": "modernizr -c modernizr-config.json -d src/modernizr.js",
     "updated-webdriver": "node ./node_modules/protractor/bin/webdriver-manager update",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot --prod"
   },
   "engines": {
     "node": "8.11.1",
@@ -94,7 +94,7 @@
     "@types/lodash": "4.14.61",
     "@types/node": "8.9.4",
     "codelyzer": "4.2.1",
-    "enhanced-resolve": "3.3.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "2.99.1",
     "jasmine-spec-reporter": "4.2.1",
     "karma": "1.7.1",
