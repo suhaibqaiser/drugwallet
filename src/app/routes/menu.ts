@@ -251,16 +251,5 @@ const Pages = {
 
 export const menu = [
     headingMenu,
-    Dashboard,
-    KanbanBoard,
-    Widgets,
-    headingComponents,
-    Elements,
-    Forms,
-    Tables,
-    Charts,
-    Maps,
-    headingMore,
-    User,
-    Pages
+    Dashboard
 ];

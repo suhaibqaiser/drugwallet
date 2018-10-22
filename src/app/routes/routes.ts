@@ -10,11 +10,11 @@ import { Signupv2Component } from './user/signupv2/signupv2.component';
 export const routes = [
 
     {
-        path: '',
+        path: 'home',
         component: LayoutComponent,
         children: [
 
-            { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+            
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'kanban', loadChildren: './kanban/kanban.module#DashboardModule' },
             { path: 'widgets', loadChildren: './widgets/widgets.module#WidgetsModule' },
@@ -29,7 +29,7 @@ export const routes = [
     },
 
     { path: 'error', loadChildren: './pages/errors/errors.module#ErrorsModule' },
-
+    { path: '', redirectTo: 'signin', pathMatch: 'full' },
     { path: 'signin', component: SigninComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'lock', component: LockComponent },
@@ -38,6 +38,6 @@ export const routes = [
     { path: 'signupv2', component: Signupv2Component },
 
     // Not found
-    { path: '**', redirectTo: 'dashboard' }
+    { path: '**', redirectTo: 'signin' }
 
 ];

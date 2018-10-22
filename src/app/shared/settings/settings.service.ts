@@ -11,7 +11,7 @@ export class SettingsService {
         // Global Settings
         // -----------------------------------
         this.app = {
-            name: 'Dasha',
+            name: 'Drug Wallet',
             description: 'Bootstrap 4 Admin Template',
             layout: {
                 rtl: false
