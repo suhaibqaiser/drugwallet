@@ -26,7 +26,7 @@ export const routes = [
             { path: 'pages', loadChildren: './pages/pages.module#PagesModule' }
 
         ]
-    },
+    }, 
 
     { path: 'error', loadChildren: './pages/errors/errors.module#ErrorsModule' },
     { path: '', redirectTo: 'signin', pathMatch: 'full' },
